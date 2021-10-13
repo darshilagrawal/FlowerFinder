@@ -84,10 +84,10 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIImagePic
             }
         }
         let handler=VNImageRequestHandler(ciImage:flowerImage)
-        do{
+        do {
             try handler.perform([request])
         }
-        catch{
+        catch {
             print(error)
         }
     }
